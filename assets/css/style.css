@@ -1,0 +1,131 @@
+html {
+  font-family: Helvetica, sans-serif !important;
+}
+section {
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.saniteck {
+  position: absolute;
+  text-align: center;
+  resize: vertical;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.saniteck h1 {
+  color: rgb(59, 62, 153);
+  font-weight: bold;
+  display: inline;
+}
+.saniteck h3 {
+  color: rgb(236, 155, 113);
+}
+.nav-black {
+  height: 40px;
+  background-color: #000;
+  line-height: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+.nav-black p {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.nav-black i {
+  color: rgb(236, 155, 113);
+}
+.navbar-nav > .active > a {
+  color: #000 !important;
+  border-bottom: 3px solid rgb(59, 62, 153);
+}
+.nav-item > a:hover {
+  color: aqua;
+}
+.carousel-item {
+  height: 85vh;
+}
+.bg-carousel {
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#item-1 {
+  position: relative;
+  background-image: url('../images/slide2.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+#item-2 {
+  background-image: url('../images/slide1.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+#item-3 {
+  background-image: url('../images/slide3.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-sobre {
+  background-image: url('../images/sobre.jpg');
+  background-size: cover;
+  height: 85vh;
+}
+.servico {
+  background-color: rgb(247, 247, 247);
+  min-height: 50px;
+  margin-top: 75px;
+  position: relative;
+  padding: 50px 0;
+}
+.servico li {
+  list-style: none;
+}
+.icone-servico {
+  border-radius: 50%;
+  background-color: rgb(237, 156, 114);
+  height: 100px;
+  width: 100px;
+  margin-top: -100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+  font-size: 50px;
+}
+.bg-clientes {
+  background-color: rgb(59, 62, 153);
+}
+.titulo {
+  height: 80px;
+  width: 215px;
+  line-height: 10px;
+  margin: 0 auto;
+}
+.title-1 {
+  color: rgb(237, 156, 114);
+  font-size: 30px;
+}
+.title-2 {
+  color: rgb(59, 62, 153);
+  float: right;
+  font-weight: bold;
+  font-size: 35px;
+}
+.title-servico {
+  color: rgb(59, 62, 153);
+}
+.clientes {
+  padding-top: 30px;
+}
+.clientes img {
+  max-width: 150px;
+  text-align: center;
+  margin: 25px 30px;
+  height: auto;
+}
