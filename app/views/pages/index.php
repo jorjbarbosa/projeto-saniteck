@@ -10,15 +10,15 @@
     <meta name="author" content="Jorge Barbosa, Luan Abreu" />
     <meta name="generator" content="Jekyll v3.8.5" />
     <title>Saniteck</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/animate.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/animate.css" />
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css" />
   </head>
   <body>
     <header>
@@ -39,7 +39,7 @@
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" width="50" height="50" alt="" />
+            <img src="<?php echo URLROOT; ?>/images/logo.png" width="50" height="50" alt="" />
             SANITECK
           </a>
           <button
@@ -81,7 +81,7 @@
       <div class="carousel-inner">
         <div class="carousel-item bg-carousel active" id="item-1">
           <div class="saniteck text-center">
-            <img src="./assets/images/logo.png" alt="" />
+            <img src="<?php echo URLROOT; ?>/images/logo.png" alt="" />
             <h1>SANITECH</h1>
             <h3>HÁ MAIS DE 38 ANOS CUIDANDO DE VOCÊ</h3>
           </div>
@@ -239,23 +239,23 @@
       </div>
       <div class="bg-clientes">
         <div class="container clientes text-center">
-          <img src="./assets/images/cliente-1.png" alt="" />
-          <img src="./assets/images/cliente-2.png" alt="" width="100px" />
-          <img src="./assets/images/cliente-3.png" alt="" />
-          <img src="./assets/images/cliente-4.png" alt="" />
-          <img src="./assets/images/cliente-5.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-1.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-2.png" alt="" width="100px" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-3.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-4.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-5.png" alt="" />
 
-          <img src="./assets/images/cliente-6.png" alt="" />
-          <img src="./assets/images/cliente-7.png" alt="" />
-          <img src="./assets/images/cliente-8.png" alt="" />
-          <img src="./assets/images/cliente-9.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-6.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-7.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-8.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-9.png" alt="" />
 
-          <img src="./assets/images/cliente-10.png" alt="" />
-          <img src="./assets/images/cliente-11.png" alt="" />
-          <img src="./assets/images/cliente-12.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-10.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-11.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-12.png" alt="" />
 
-          <img src="./assets/images/cliente-13.png" alt="" width="100px" />
-          <img src="./assets/images/cliente-14.png" alt="" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-13.png" alt="" width="100px" />
+          <img src="<?php echo URLROOT; ?>/images/cliente-14.png" alt="" />
         </div>
       </div>
     </section>
@@ -264,6 +264,6 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo URLROOT; ?>/js/bootstrap.min.js"></script>
   </body>
 </html>
