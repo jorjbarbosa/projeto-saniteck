@@ -68,6 +68,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">CLIENTES</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTATO</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -263,11 +266,6 @@
       <div class="container text-center">
         <h4 class="title-blue">depoimentos</h4>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
           <div class="carousel-inner" style="height: 500px;">
             <div class="carousel-item active">
               <div class="depoimento">
@@ -300,7 +298,39 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <a href="#" class="avalie">AVALIE NOSSOS SERVIÇOS</a>
+        <a href="#" class="avalie" data-toggle="modal" data-target="#exampleModalCenter">AVALIE NOSSOS SERVIÇOS</a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title title-blue" id="exampleModalLongTitle" style="font-size: 20px;">Avalie Nossos Serviços</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="#" method="post">
+                <div class="modal-body">
+                  
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="depoimento" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    estrelas
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-saniteck2" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-saniteck">Enviar Avaliação</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
       
     </section>
@@ -309,7 +339,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <form action="#" method="post">
+          
+            <form action="<?php echo URLROOT.'/pages/contato/'?>" method="post">
               <div class="form-group">
                 <input type="text" name="nome" class="form-control" placeholder="Nome Completo">
               </div>
@@ -320,6 +351,7 @@
                 <input type="text" name="email" class="form-control" placeholder="seu@email.com">
               </div>
               <textarea name="mensagem" cols="30" rows="10" class="form-control"></textarea>
+              <button type="submit" class="btn btn-saniteck btn-lg float-right mt-3">Enviar Mensagem</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -331,6 +363,11 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>Saniteck &copy; - Todos os Direitos Reservados</p>
+      <p>Desenvolvido por Jorge Luis</p>
+      
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
