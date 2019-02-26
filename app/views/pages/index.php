@@ -267,27 +267,14 @@
         <h4 class="title-blue">depoimentos</h4>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
           <div class="carousel-inner" style="height: 500px;">
-            <div class="carousel-item active">
+            <?php foreach($data['depoimentos'] as $key=>$depoimento): ?>
+            <div class="carousel-item <?php echo $key == 0 ? 'active': '';?>">
               <div class="depoimento">
-                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
-                <p>John Doe</p>
-                <p>STARS</p>
+                <p class="lead ">"<?php echo $depoimento->mensagem;?>"</p>
+                <p class="lead"><?php echo $depoimento->nome;?></p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="depoimento">
-                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
-                <p>John Doe</p>
-                <p>STARS</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="depoimento">
-                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
-                <p>John Doe</p>
-                <p>STARS</p>
-              </div>
-            </div>
+            <?php endforeach;?>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -309,19 +296,18 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <form action="#" method="post">
+              <form action="<?php echo URLROOT.'/pages/novoDepoimento/'?>" method="post">
                 <div class="modal-body">
                   
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Nome">
+                      <input type="text" class="form-control" placeholder="Nome" name="nome">
                     </div>
                     <div class="form-group">
-                      <input type="email" class="form-control" placeholder="seu@email.com">
+                      <input type="email" class="form-control" placeholder="seu@email.com" name="email">
                     </div>
                     <div class="form-group">
-                      <textarea name="depoimento" cols="30" rows="10" class="form-control"></textarea>
+                      <textarea name="mensagem" cols="30" rows="10" class="form-control" placeholder="Escreva seu depoimento ou avaliação"></textarea>
                     </div>
-                    estrelas
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-saniteck2" data-dismiss="modal">Cancelar</button>
