@@ -259,6 +259,78 @@
         </div>
       </div>
     </section>
+    <section id="depoimentos">
+      <div class="container text-center">
+        <h4 class="title-blue">depoimentos</h4>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" style="height: 500px;">
+            <div class="carousel-item active">
+              <div class="depoimento">
+                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
+                <p>John Doe</p>
+                <p>STARS</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="depoimento">
+                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
+                <p>John Doe</p>
+                <p>STARS</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="depoimento">
+                <p class="lead ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores reprehenderit minus quidem maxime soluta, quae quaerat eum ad nihil mollitia sapiente, illum blanditiis velit dignissimos distinctio itaque cupiditate accusamus."</p>
+                <p>John Doe</p>
+                <p>STARS</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <a href="#" class="avalie">AVALIE NOSSOS SERVIÇOS</a>
+      </div>
+      
+    </section>
+    <section id="contato">
+      <h4 class="title-blue text-center mb-5">contato</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="#" method="post">
+              <div class="form-group">
+                <input type="text" name="nome" class="form-control" placeholder="Nome Completo">
+              </div>
+              <div class="form-group">
+                <input type="text" name="telefone" class="form-control" placeholder="Telefone">
+              </div>
+              <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="seu@email.com">
+              </div>
+              <textarea name="mensagem" cols="30" rows="10" class="form-control"></textarea>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <p class="contato">Endereço: Avenida Maués, 1938 - Cachoeirinha, Manaus - AM, 69065-070</p>
+            <p class="contato">Telefone: (92) 3612-1212 Whatsapp: (92) 98802-3592</p>
+            <p class="contato">E-mail: saniteck@saniteck.com.br | comercial@saniteck.com.br</p>
+            <p class="contato">Redes Sociais:</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
