@@ -7,7 +7,7 @@
     }
     
     public function getDepoimentos() {
-      $this->db->query("SELECT * FROM depoimentos WHERE mostrar = 1");
+      $this->db->query("SELECT * FROM depoimentos");
       $depoimentos = $this->db->resultSet();
       return $depoimentos;
     }

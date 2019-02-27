@@ -26,7 +26,7 @@
           'mensagem' => trim($_POST['mensagem'])
         ];
 
-        $to      = 'saniteck@saniteck.com.br';
+        $to      = 'jorgebarbosa_@outlook.com';
         $subject = 'Site Saniteck';
         $message = $dados['mensagem'];
         $headers = 'From: '. $dados['email'] . "\r\n" .

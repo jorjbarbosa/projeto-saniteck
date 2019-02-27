@@ -26,7 +26,7 @@
         <div class="container">
           <div class="infos">
             <p>
-              <i class="fas fa-envelope"></i> saniteck@saniteck.com |
+              <i class="fas fa-envelope"></i> saniteck@saniteck.com.br |
               <i class="fas fa-phone"></i> (92) 3612-1212
             </p>
             <div class="float-right">
@@ -85,7 +85,7 @@
         <div class="carousel-item bg-carousel active" id="item-1">
           <div class="saniteck text-center">
             <img src="<?php echo URLROOT; ?>/images/logo.png" alt="" />
-            <h1>SANITECH</h1>
+            <h1>SANITECK</h1>
             <h3>HÁ MAIS DE 38 ANOS CUIDANDO DE VOCÊ</h3>
           </div>
         </div>
@@ -341,10 +341,14 @@
             </form>
           </div>
           <div class="col-md-6">
-            <p class="contato">Endereço: Avenida Maués, 1938 - Cachoeirinha, Manaus - AM, 69065-070</p>
-            <p class="contato">Telefone: (92) 3612-1212 Whatsapp: (92) 98802-3592</p>
-            <p class="contato">E-mail: saniteck@saniteck.com.br | comercial@saniteck.com.br</p>
-            <p class="contato">Redes Sociais:</p>
+            <p class="contato lead"><i class="fas fa-map-marker-alt"></i> Endereço: Avenida Maués, 1938 - Cachoeirinha, Manaus - AM, 69065-070</p>
+            <p class="contato lead"><i class="fas fa-phone"></i> Telefone: (92) 3612-1212 Whatsapp: (92) 98802-3592</p>
+            <p class="contato lead"> <i class="fas fa-envelope"></i> E-mail: saniteck@saniteck.com.br | comercial@saniteck.com.br</p>
+            <p class="contato lead">Redes Sociais: 
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>  
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </p>
           </div>
         </div>
       </div>
