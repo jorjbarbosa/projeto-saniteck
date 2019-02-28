@@ -5,7 +5,9 @@ section {
   min-height: 100vh;
   padding-top: 40px;
 }
-
+#navbar {
+  transition: 1.5s;
+}
 .saniteck {
   position: absolute;
   text-align: center;

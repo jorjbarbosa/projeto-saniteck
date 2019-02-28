@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="inicio">
       <div class="nav-black">
         <div class="container">
           <div class="infos">
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="<?php echo URLROOT; ?>/images/logo.png" width="50" height="50" alt="" />
@@ -57,19 +57,19 @@
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">INÍCIO</a>
+                <a class="nav-link scroll" href="#inicio">INÍCIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">QUEM SOMOS</a>
+                <a class="nav-link scroll" href="#quem-somos">QUEM SOMOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVIÇOS</a>
+                <a class="nav-link scroll" href="#servicos">SERVIÇOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CLIENTES</a>
+                <a class="nav-link scroll" href="#clientes">CLIENTES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTATO</a>
+                <a class="nav-link scroll" href="#contato">CONTATO</a>
               </li>
             </ul>
           </div>
@@ -389,11 +389,10 @@
       <p>Desenvolvido por Jorge Luis</p>
       
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    
+    <script src="<?php echo URLROOT; ?>/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo URLROOT; ?>/js/jquery.easing.min.js"></script>
     <script src="<?php echo URLROOT; ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo URLROOT; ?>/js/main.js"></script>
   </body>
 </html>
