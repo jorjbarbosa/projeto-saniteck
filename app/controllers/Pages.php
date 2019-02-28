@@ -46,7 +46,8 @@
       $dados = [
         'nome' => trim($_POST['nome']),
         'email' => trim($_POST['email']),
-        'mensagem' => trim($_POST['mensagem'])
+        'mensagem' => trim($_POST['mensagem']),
+        'estrelas' => trim($_POST['estrela'])
       ];
 
       if($this->clienteModel->novoDepoimento($dados)){

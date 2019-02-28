@@ -272,6 +272,18 @@
               <div class="depoimento">
                 <p class="lead ">"<?php echo $depoimento->mensagem;?>"</p>
                 <p class="lead"><?php echo $depoimento->nome;?></p>
+                <div class="estrelas">
+                  <?php 
+                    for($i = 0; $i < 5; $i++){ 
+                      if($i < $depoimento->estrelas){ ?>
+                        <label for="estrela"><i class="fa"></i></label>
+                        <input type="radio" name="estrela" checked>
+                      <?php } else {?>
+                         <label for="estrela"><i class="fa"></i></label>
+                              <input type="radio" name="estrela">
+                      <?php }} ?>
+                  
+                </div>
               </div>
             </div>
             <?php endforeach;?>
@@ -298,7 +310,6 @@
               </div>
               <form action="<?php echo URLROOT.'/pages/novoDepoimento/'?>" method="post">
                 <div class="modal-body">
-                  
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Nome" name="nome">
                     </div>
@@ -307,6 +318,26 @@
                     </div>
                     <div class="form-group">
                       <textarea name="mensagem" cols="30" rows="10" class="form-control" placeholder="Escreva seu depoimento ou avaliação"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="estrelas" class="label-estrela">AVALIE A QUALIDADE DOS NOSSOS SERVIÇOS</label>
+                      <div class="estrelas">
+                        <input type="radio" id="vazio" name="estrela" value="" checked>
+                          <label for="estrela_um"><i class="fa"></i></label>
+                          <input type="radio" id="estrela_um" name="estrela" value="1">
+                          
+                          <label for="estrela_dois"><i class="fa"></i></label>
+                          <input type="radio" id="estrela_dois" name="estrela" value="2">
+                          
+                          <label for="estrela_tres"><i class="fa"></i></label>
+                          <input type="radio" id="estrela_tres" name="estrela" value="3">
+                          
+                          <label for="estrela_quatro"><i class="fa"></i></label>
+                          <input type="radio" id="estrela_quatro" name="estrela" value="4">
+                          
+                          <label for="estrela_cinco"><i class="fa"></i></label>
+                        <input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
+                      </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -336,7 +367,7 @@
               <div class="form-group">
                 <input type="text" name="email" class="form-control" placeholder="seu@email.com">
               </div>
-              <textarea name="mensagem" cols="30" rows="10" class="form-control"></textarea>
+              <textarea name="mensagem" cols="30" rows="10" class="form-control" placeholder="Digite sua mensagem"></textarea>
               <button type="submit" class="btn btn-saniteck btn-lg float-right mt-3">Enviar Mensagem</button>
             </form>
           </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Fev-2019 às 07:02
+-- Generation Time: 28-Fev-2019 às 12:13
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -33,9 +33,18 @@ CREATE TABLE `depoimentos` (
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `mensagem` text NOT NULL,
+  `estrelas` int(11) NOT NULL,
   `mostrar` int(11) NOT NULL DEFAULT '1',
   `data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `depoimentos`
+--
+
+INSERT INTO `depoimentos` (`id`, `nome`, `email`, `mensagem`, `estrelas`, `mostrar`, `data`) VALUES
+(1, 'John Doe', 'john@doe.com', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 5, 1, '2019-02-28 00:40:40'),
+(2, 'Jorge Barbosa', 'jorge@email.com', 'kgjkahghjkahgjkhdajkg', 3, 1, '2019-02-28 00:50:13');
 
 --
 -- Indexes for dumped tables
@@ -55,7 +64,7 @@ ALTER TABLE `depoimentos`
 -- AUTO_INCREMENT for table `depoimentos`
 --
 ALTER TABLE `depoimentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
