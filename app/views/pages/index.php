@@ -39,8 +39,8 @@
       <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="<?php echo URLROOT; ?>/images/logo.png" width="50" height="50" alt="" />
-            SANITECK
+            <img src="<?php echo URLROOT; ?>/images/logo-1.png" width="250" height="60" style="margin: -10px;" alt="" />
+            
           </a>
           <button
             class="navbar-toggler"
@@ -89,8 +89,17 @@
             <h3>HÁ MAIS DE 38 ANOS CUIDANDO DE VOCÊ</h3>
           </div>
         </div>
-        <div class="carousel-item bg-carousel" id="item-2"></div>
-        <div class="carousel-item bg-carousel" id="item-3"></div>
+        <div class="carousel-item bg-carousel" id="item-2">
+          <div class="saniteck text-center">
+            <h3>CONHEÇA NOSSOS SERVIÇOS</h3>
+            <a href="#servicos" class="btn btn-saniteck btn-lg mt-3 scroll">SAIBA MAIS</a>
+          </div>
+        </div>
+        <div class="carousel-item bg-carousel" id="item-3">
+          <div class="saniteck text-center">
+              <h3>TEMOS O MELHOR PROCESSO DE LIMPEZA DO MERCADO</h3>
+            </div>
+        </div>
       </div>
       <a
         class="carousel-control-prev"
@@ -372,10 +381,10 @@
             </form>
           </div>
           <div class="col-md-6">
-            <p class="contato lead"><i class="fas fa-map-marker-alt"></i> Endereço: Avenida Maués, 1938 - Cachoeirinha, Manaus - AM, 69065-070</p>
-            <p class="contato lead"><i class="fas fa-phone"></i> Telefone: (92) 3612-1212 Whatsapp: (92) 98802-3592</p>
-            <p class="contato lead"> <i class="fas fa-envelope"></i> E-mail: saniteck@saniteck.com.br | comercial@saniteck.com.br</p>
-            <p class="contato lead">Redes Sociais: 
+            <p class="contato lead"><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Avenida Maués, 1938 - Cachoeirinha, Manaus - AM, 69065-070</p>
+            <p class="contato lead"><i class="fas fa-phone"></i> <strong>Telefone:</strong> (92) 3612-1212 <strong>Whatsapp:</strong> (92) 98802-3592</p>
+            <p class="contato lead"> <i class="fas fa-envelope"></i> <strong>E-mail:</strong> saniteck@saniteck.com.br | comercial@saniteck.com.br</p>
+            <p class="contato lead"><strong>Redes Sociais:</strong> 
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-facebook"></i></a>  
               <a href="#"><i class="fab fa-youtube"></i></a>
