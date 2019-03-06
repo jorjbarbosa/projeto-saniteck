@@ -9,6 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Jorge Barbosa, Luan Abreu" />
     <meta name="generator" content="Jekyll v3.8.5" />
+    <link rel="shortcut icon" href="<?php echo URLROOT; ?>/images/logo.ico" type="image/x-icon">
     <title>Saniteck</title>
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/bootstrap.min.css" />
     <link
@@ -56,7 +57,7 @@
 
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link scroll" href="#inicio">INÍCIO</a>
               </li>
               <li class="nav-item">
@@ -274,45 +275,24 @@
     <section id="depoimentos">
       <div class="container text-center">
         <h4 class="title-blue">depoimentos</h4>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
-          <div class="carousel-inner" style="height: 500px;">
-            <?php foreach($data['depoimentos'] as $key=>$depoimento): ?>
-            <div class="carousel-item <?php echo $key == 0 ? 'active': '';?>">
-              <div class="depoimento">
-                <p class="lead ">"<?php echo $depoimento->mensagem;?>"</p>
-                <p class="lead"><?php echo $depoimento->nome;?></p>
-                <div class="estrelas">
-                  <?php 
-                    for($i = 0; $i < 5; $i++){ 
-                      if($i < $depoimento->estrelas){ ?>
-                        <label for="estrela"><i class="fa"></i></label>
-                        <input type="radio" name="estrela" checked>
-                      <?php } else {?>
-                         <label for="estrela"><i class="fa"></i></label>
-                              <input type="radio" name="estrela">
-                      <?php }} ?>
-                  
-                </div>
-              </div>
+        <div class="row">          
+          <?php foreach($data['depoimentos'] as $depoimento): ?>
+          <div class="col-md-4 text-center">
+            <div class="profile">
+              <img src="<?php echo URLROOT; ?>/images/user-default.jpg" class="user" />
+              <p>"<?php echo $depoimento->mensagem;?>"</p>
+              <h3 ><?php echo $depoimento->nome;?> <span-2> <?php echo $depoimento->cargo;?></span-2></h3>
             </div>
-            <?php endforeach;?>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <?php endforeach;?>
         </div>
-        <a href="#" class="avalie" data-toggle="modal" data-target="#exampleModalCenter">AVALIE NOSSOS SERVIÇOS</a>
+        <a href="#" class="avalie" data-toggle="modal" data-target="#exampleModalCenter">DEIXE SEU DEPOIMENTO</a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title title-blue" id="exampleModalLongTitle" style="font-size: 20px;">Avalie Nossos Serviços</h5>
+                <h5 class="modal-title title-blue" id="exampleModalLongTitle" style="font-size: 20px;">Deixe seu Depoimento</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -323,30 +303,13 @@
                       <input type="text" class="form-control" placeholder="Nome" name="nome">
                     </div>
                     <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Empresa" name="cargo">
+                    </div>
+                    <div class="form-group">
                       <input type="email" class="form-control" placeholder="seu@email.com" name="email">
                     </div>
                     <div class="form-group">
-                      <textarea name="mensagem" cols="30" rows="10" class="form-control" placeholder="Escreva seu depoimento ou avaliação"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="estrelas" class="label-estrela">AVALIE A QUALIDADE DOS NOSSOS SERVIÇOS</label>
-                      <div class="estrelas">
-                        <input type="radio" id="vazio" name="estrela" value="" checked>
-                          <label for="estrela_um"><i class="fa"></i></label>
-                          <input type="radio" id="estrela_um" name="estrela" value="1">
-                          
-                          <label for="estrela_dois"><i class="fa"></i></label>
-                          <input type="radio" id="estrela_dois" name="estrela" value="2">
-                          
-                          <label for="estrela_tres"><i class="fa"></i></label>
-                          <input type="radio" id="estrela_tres" name="estrela" value="3">
-                          
-                          <label for="estrela_quatro"><i class="fa"></i></label>
-                          <input type="radio" id="estrela_quatro" name="estrela" value="4">
-                          
-                          <label for="estrela_cinco"><i class="fa"></i></label>
-                        <input type="radio" id="estrela_cinco" name="estrela" value="5"><br><br>
-                      </div>
+                      <textarea name="mensagem" cols="30" rows="10" maxlength="200" class="form-control" placeholder="Escreva seu depoimento ou avaliação"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -9,7 +9,6 @@
       $data = [
         'depoimentos' => $depoimentos
       ];
-     
       $this->view('pages/index', $data);
     }
     public function contato() {
@@ -45,9 +44,9 @@
       // Inicializa os Dados
       $dados = [
         'nome' => trim($_POST['nome']),
+        'cargo' => trim($_POST['cargo']),
         'email' => trim($_POST['email']),
-        'mensagem' => trim($_POST['mensagem']),
-        'estrelas' => trim($_POST['estrela'])
+        'mensagem' => trim($_POST['mensagem'])
       ];
 
       if($this->clienteModel->novoDepoimento($dados)){

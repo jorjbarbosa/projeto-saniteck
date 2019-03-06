@@ -7,16 +7,16 @@
     }
     
     public function getDepoimentos() {
-      $this->db->query("SELECT * FROM depoimentos");
+      $this->db->query("SELECT * FROM `depoimentos` ORDER BY data DESC LIMIT 3");
       $depoimentos = $this->db->resultSet();
       return $depoimentos;
     }
     public function novoDepoimento($dados) {
-      $this->db->query("INSERT INTO depoimentos (nome, email, mensagem, estrelas) VALUES (:nome, :email, :mensagem, :estrelas);");
+      $this->db->query("INSERT INTO depoimentos (nome, cargo, email, mensagem) VALUES (:nome, :cargo,:email,:mensagem);");
       $this->db->bind(':nome', $dados['nome']);
       $this->db->bind(':email', $dados['email']);
       $this->db->bind(':mensagem', $dados['mensagem']);
-      $this->db->bind(':estrelas', $dados['estrelas']);
+      $this->db->bind(':cargo', $dados['cargo']);
       if($this->db->execute()) {
         return true;
       } else {
